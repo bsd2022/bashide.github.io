@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>图片幻灯片插件</title>
+<link rel="stylesheet" href="css/demo.min.css">
+<link rel="stylesheet" href="css/lgallery.min.css" />
+</head>
+<body>
+<div class="QuickStart" id="quickstart">
+  <div class="Wrapper"><div style="text-align:center"><p><img src="img/logo.png" width="150" height="150"></p></div>
+    <h1> 八适得 <span>成都七中万达学校<br>高2022级8班</span> </h1>
+  </div>
+</div>
+<div class="Lgallery" id="lgallery">
+  <div class="Wrapper Wrapper_flex_center">
+    <h3>运动会:</h3>
+	<h3><li>比赛直播:</li></h3>
+	<div class="TemplateLgallery" data-lghover="300"
+      data-lgallery="img/pb/pb1.jpg,img/pb/pb2.jpg,img/pb/pb3.jpg,img/pb/pb4.jpg,img/pb/pb5.jpg,img/pb/pb6.jpg,img/pb/pb7.jpg,img/pb/pb8.jpg,img/pb/pb9.jpg,img/pb/pb10.jpg,img/pb/pb11.jpg,img/pb/pb12.jpg,img/pb/pb13.jpg,img/pb/pb14.jpg,img/pb/pb15.jpg,img/pb/pb16.jpg,img/pb/pb17.jpg,img/pb/pb18.jpg,img/pb/pb19.jpg,img/pb/pb20.jpg,img/pb/pb21.jpg,img/pb/pb22.jpg,img/pb/pb23.jpg,img/pb/pb24.jpg,img/pb/pb25.jpg,img/pb/pb26.jpg,img/pb/pb27.jpg,img/pb/pb28.jpg,img/pb/pb29.jpg,img/pb/pb30.jpg,img/pb/pb31.jpg,img/pb/pb32.jpg,img/pb/pb33.jpg,img/pb/pb34.jpg,img/pb/pb35.jpg,img/pb/pb36.jpg,img/pb/pb37.jpg,img/pb/pb38.jpg,img/pb/pb39.jpg,img/pb/pb40.jpg,img/pb/pb41.jpg,img/pb/pb42.jpg,img/pb/pb43.jpg,img/pb/pb44.jpg,img/pb/pb45.jpg,img/pb/pb46.jpg,img/pb/pb47.jpg,img/pb/pb48.jpg,img/pb/pb49.jpg"
+      data-lglabel="1,2,3,4,5" data-lgdescription="1的,2的,3的,4的,5的">
+      <div class="TemplateLgallery-Item"> <img src="img/pb/pb39.jpg" alt="Witcher" /><span>跑步</span> </div>
+    </div>
+	<div class="TemplateLgallery" data-lghover="300"
+      data-lgallery="img/tg/tg1.jpg,img/tg/tg2.jpg,img/tg/tg3.jpg,img/tg/tg4.jpg,img/tg/tg5.jpg,img/tg/tg6.jpg,img/tg/tg7.jpg,img/tg/tg8.jpg,img/tg/tg9.jpg,img/tg/tg10.jpg,img/tg/tg11.jpg,img/tg/tg12.jpg,img/tg/tg13.jpg,img/tg/tg14.jpg,img/tg/tg15.jpg,img/tg/tg16.jpg,img/tg/tg17.jpg,img/tg/tg18.jpg,img/tg/tg19.jpg,img/tg/tg20.jpg,img/tg/tg21.jpg"
+      data-lglabel="1,2,3,4,5" data-lgdescription="1的,2的,3的,4的,5的">
+      <div class="TemplateLgallery-Item"> <img src="img/tg/tg16.jpg" alt="Witcher" /><span>跳高</span> </div>
+    </div>
+	<div class="TemplateLgallery" data-lghover="300"
+      data-lgallery="img/ty/ty1.jpg,img/ty/ty2.jpg,img/ty/ty3.jpg,img/ty/ty4.jpg,img/ty/ty5.jpg,img/ty/ty6.jpg,img/ty/ty7.jpg,img/ty/ty8.jpg,img/ty/ty9.jpg,img/ty/ty10.jpg"
+      data-lglabel="1,2,3,4,5" data-lgdescription="1的,2的,3的,4的,5的">
+      <div class="TemplateLgallery-Item"> <img src="img/ty/ty10.jpg" alt="Witcher" /><span>跳远</span> </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="Lgallery" id="lgallery">
+  <div class="Wrapper Wrapper_flex_center">
+    <h3>   :</h3>
+	<h3><li>  :</li></h3>
+	<div class="TemplateLgallery" data-lghover="300"
+      data-lgallery="  "
+      data-lglabel="1,2,3,4,5" data-lgdescription="1的,2的,3的,4的,5的">
+      <div class="TemplateLgallery-Item"> <img src="  " alt="Witcher" /><span>   </span> </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- SCRIPTS --> 
+<script src="js/lgallery.min.js"></script> 
+<script>
+  // Slow scrolling
+  function slowScrolling() {
+    let anchors = document.querySelectorAll('a[href*="#"]')
+
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        let blockID = anchor.getAttribute('href')
+
+        document.querySelector('' + blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    };
+  };
+  slowScrolling()
+
+  // Init LGallery
+  let x = initLG();
+</script>
+    <h3><a href="index.html">运动会:</a></h3>
+	<h3><a href="sq.html"><li>赛前:</li></a></h3>
+	<h3><a href="klsg.html"><li>同学们的快乐时光:</li></a></h3>
+	<h3><a href="sh.html"><li>后勤助力大分队:</li></a></h3>
+	<h3><a href="sh.html"><li>比赛直播:</li></a></h3>
+	<h3><a href="js.html"><li>教师风采:</li></a></h3>
+    <h3><a href="sh.html"><li>赛后:</li></a></h3>
+<div style="text-align:center"><p><img src="img/qrcode.jpg" width="100" height="100"></p>
+    <h1><p> 八适得<br></br><span>成都七中万达学校高2022级8班</span></p></h1></div>
+<br></br><br></br><br></br><p color=white>模板来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材@LGallery</a></p>
+</div>
+</body>
+</html>
