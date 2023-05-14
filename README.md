@@ -7,4 +7,4 @@
 ####
 最终解释权归成都七中万达学校高2022级8班所有
 ####
-[官方网站1](https://bsd.github.io/)   [官方网站1](https://bsd.4everland.app/)
+[官方网站1](https://bsd.github.io/)   [官方网站2（快）](https://bsd.4everland.app/)
